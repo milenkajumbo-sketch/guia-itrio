@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Guía del Itrio</title>
+<meta name="description" content="Guía interactiva del itrio (Y, elemento 39): historia, átomo, propiedades, enlaces, aplicaciones, extracción, semivida, juegos, fichas y quiz. Gratis y en español.">
+<meta name="theme-color" content="#2f49d8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guía del Itrio — elemento 39">
+<meta property="og:description" content="Estudia el itrio con simuladores, tabla periódica interactiva, juegos, fichas y un quiz de 30 preguntas.">
+<meta property="og:image" content="og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Hanken+Grotesk:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>try{const t=localStorage.getItem('itrio-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#que-es">Saltar al contenido</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.2 10.9l7.6-3.8M8.2 13.1l7.6 3.8" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 8V3h10v5M7 17H4v-7h16v7h-3M7 14h10v7H7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+</svg>
+
+<div class="topbar" id="topbar">
+  <div class="topbar-in">
+    <span class="cur" id="curTitle">Guía del Itrio</span>
+    <button class="icon-btn" type="button" data-act="search" aria-label="Buscar"><svg><use href="#i-search"/></svg></button>
+    <button class="icon-btn" type="button" data-act="theme" aria-label="Cambiar tema"><svg><use href="#i-moon"/></svg></button>
+    <button class="btn sm" type="button" id="menuBtn" aria-expanded="false" aria-controls="drawer">Índice</button>
+  </div>
+  <div class="bar"><i id="barTop"></i></div>
+</div>
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-head"><b style="font-family:var(--f-display);font-size:1.3rem">Índice</b><button class="btn sm" type="button" id="closeBtn">Cerrar</button></div>
+  <div class="meter" style="margin-bottom:12px"><span class="seenTxt"></span><div class="bar"><i class="barSeen"></i></div></div>
+  <ul class="nav" id="drawerNav"></ul>
+</div>
+
+<div class="layout">
+<aside class="side" aria-label="Índice">
+  <a class="brand" href="#inicio"><span class="brand-tile"><small>39</small>Y</span><span><b>Guía del Itrio</b><span>Elemento 39 · edición ampliada</span></span></a>
+  <div class="tools">
+    <button class="search-btn" type="button" data-act="search"><svg width="16" height="16"><use href="#i-search"/></svg>Buscar<kbd>⌘K</kbd></button>
+    <button class="icon-btn" type="button" data-act="theme" aria-label="Cambiar tema" title="Tema claro / oscuro"><svg><use href="#i-moon"/></svg></button>
+    <button class="icon-btn" type="button" data-act="share" aria-label="Compartir" title="Compartir"><svg><use href="#i-share"/></svg></button>
+  </div>
+  <div class="meter"><span class="seenTxt"></span><div class="bar"><i class="barSeen"></i></div>
+    <a href="#logros" style="display:block;margin-top:10px;color:var(--ink-2);text-decoration:none"><span id="achTxt">Logros</span><span class="badges-mini" id="achMini"></span></a></div>
+  <ul class="nav" id="sideNav"></ul>
+</aside>
+
+<main class="main" id="top">
+<section class="hero" id="inicio" data-title="Inicio">
+  <div>
+    <p class="eyebrow">Elemento 39 · Grupo 3 · Período 5</p>
+    <h1>Itrio <span>Y</span></h1>
+    <p class="lede">El metal plateado que pone el rojo en las pantallas, el amarillo en los LED blancos y la precisión en muchos láseres. Estudia con simuladores, juegos, fichas y un quiz.</p>
+    <div class="row"><a class="btn primary" href="#que-es">Empezar a estudiar</a><a class="btn" href="#quiz">Ir al quiz</a></div>
+    <p class="resume" id="resume"></p>
+    <ul class="quick" aria-label="Ficha rápida"><li>Z = 39</li><li>A = 89</li><li>Y³⁺</li><li>[Kr] 4d¹ 5s²</li><li>Gadolin, 1794</li></ul>
+    <div class="stats">
+      <div class="stat"><b id="stCh">16</b><span>capítulos</span></div>
+      <div class="stat"><b>8</b><span>simuladores</span></div>
+      <div class="stat"><b id="stQ">30</b><span>preguntas de quiz</span></div>
+      <div class="stat"><b id="stA">0/10</b><span>logros</span></div>
+    </div>
+  </div>
+  <div class="stage">
+    <div class="bubble" id="heroBubble" aria-live="polite">Soy Itri, la mascota del elemento 39. Tócame y te cuento un dato, o elige una luz.</div>
+    <div class="hero-mascot" id="heroMascot"></div>
+    <div class="row" role="group" aria-label="Luces de Itri" style="justify-content:center">
+      <button class="btn sm" type="button" data-mood="rojo" aria-pressed="false">Luz roja</button>
+      <button class="btn sm" type="button" data-mood="blanca" aria-pressed="false">Luz blanca</button>
+      <button class="btn sm" type="button" data-mood="laser" aria-pressed="false">Láser</button>
+      <button class="btn sm" type="button" data-mood="verde" aria-pressed="false">Láser verde</button>
+      <button class="btn sm" type="button" data-mood="frio" aria-pressed="false">Superconductor</button>
+    </div>
+  </div>
+</section>
+
+<section class="chap" id="que-es" data-title="¿Qué es el itrio?">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>¿Qué es el itrio?</h2>
+  <p class="lede">Un metal de transición blando y plateado del grupo 3. No es un lantánido, pero se parece tanto a los lantánidos pesados que casi siempre aparece mezclado con ellos y se clasifica entre las tierras raras.</p></header>
+  <div class="split">
+    <div class="ptile" role="img" aria-label="Ficha del itrio: número atómico 39, símbolo Y, masa 88,906"><div class="top"><span>39</span><span>88,906</span></div><div class="sym">Y</div><div class="nm">Itrio</div><div class="cf">[Kr] 4d¹ 5s²</div></div>
+    <div class="card">
+      <dl class="kv">
+        <dt>Símbolo químico</dt><dd>Y</dd>
+        <dt>Número atómico (Z)</dt><dd>39</dd>
+        <dt>Grupo · período · bloque</dt><dd>3 · 5 · d</dd>
+        <dt>Categoría</dt><dd>Metal de transición (tierra rara)</dd>
+        <dt>Masa atómica</dt><dd>88,906 u</dd>
+        <dt>Configuración</dt><dd class="mono">[Kr] 4d¹ 5s²</dd>
+        <dt>Estado de oxidación</dt><dd>+3</dd>
+        <dt>Isótopo natural</dt><dd><sup>89</sup>Y (100 %)</dd>
+      </dl>
+    </div>
+  </div>
+  <p style="margin-top:22px">El nombre «tierras raras» confunde: no son raras por escasas. El itrio, por ejemplo, es unas 400 veces más abundante en la corteza que la plata. Lo difícil es separarlo, porque sus elementos vecinos se comportan casi igual.</p>
+  <aside class="recall"><span class="tag">Para recordar</span><ul><li>Símbolo <b>Y</b> y número atómico <b>39</b>.</li><li>Metal de transición del grupo 3, clasificado como tierra rara.</li><li>Casi siempre forma el ion <b>Y³⁺</b>.</li></ul></aside>
+</section>
+
+<section class="chap" id="tabla" data-title="En la tabla periódica">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>El itrio en la tabla periódica <span class="new">nuevo</span></h2>
+  <p class="lede">Toca cualquier elemento para ver su ficha. Usa los filtros para ver dónde están las tierras raras, el grupo 3 y los elementos de Ytterby.</p></header>
+  <div class="card">
+    <div class="row" role="group" aria-label="Resaltar" id="ptFilter" style="margin-bottom:14px">
+      <button class="btn sm" type="button" data-pf="all" aria-pressed="true">Todo</button>
+      <button class="btn sm" type="button" data-pf="rare" aria-pressed="false">Tierras raras (17)</button>
+      <button class="btn sm" type="button" data-pf="g3" aria-pressed="false">Grupo 3</button>
+      <button class="btn sm" type="button" data-pf="ytt" aria-pressed="false">Nombre de Ytterby</button>
+      <button class="btn sm" type="button" data-pf="p5" aria-pressed="false">Período 5</button>
+    </div>
+    <div class="pt-wrap"><div class="pt" id="pt" role="grid" aria-label="Tabla periódica"></div></div>
+    <div class="pt-legend"><span><i style="background:var(--red-soft)"></i>bloque s</span><span><i style="background:var(--teal-soft)"></i>bloque p</span><span><i style="background:var(--accent-soft)"></i>bloque d</span><span><i style="background:var(--violet-soft)"></i>bloque f</span><span><i style="box-shadow:inset 0 0 0 2px var(--yag)"></i>tierra rara</span></div>
+    <div class="pt-info" id="ptInfo" aria-live="polite"></div>
+  </div>
+  <p style="margin-top:20px">Las <b>17 tierras raras</b> son el escandio (21), el itrio (39) y los 15 lantánidos (57–71). El itrio queda justo encima de los lantánidos: su ion Y³⁺ mide casi lo mismo que el Ho³⁺, y por eso se comporta como un lantánido pesado.</p>
+  <aside class="recall"><span class="tag">Para recordar</span><ul><li>Itrio: <b>período 5, grupo 3, bloque d</b>.</li><li>Tierras raras = Sc + Y + 15 lantánidos.</li></ul></aside>
+</section>
+
+<section class="chap" id="historia" data-title="Historia">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Historia del itrio</h2>
+  <p class="lede">Empieza con una roca negra y pesada en una cantera sueca. Abre cada fecha para ver el detalle.</p></header>
+  <ol class="timeline" id="timeline"></ol>
+  <div class="card" style="margin-top:26px">
+    <h3>Origen del nombre</h3>
+    <p style="margin-top:10px">Ytterby es un pueblo de Suecia. De él salió el nombre de la roca (<i>ytterbita</i>), luego el del óxido (<i>itria</i>, Y₂O₃) y por último el del metal: <b>itrio</b>. La misma cantera dio nombre a cuatro elementos.</p>
+    <div class="mini-tiles" aria-label="Elementos con nombre de Ytterby">
+      <div class="mt hl"><small><span>39</span></small><b>Y</b>Itrio</div>
+      <div class="mt"><small><span>65</span></small><b>Tb</b>Terbio</div>
+      <div class="mt"><small><span>68</span></small><b>Er</b>Erbio</div>
+      <div class="mt"><small><span>70</span></small><b>Yb</b>Iterbio</div>
+    </div>
+  </div>
+  <aside class="recall"><span class="tag">Para recordar</span><ul><li>Descubridor: <b>Johan Gadolin</b>, <b>1794</b>.</li><li>Nombre: del pueblo sueco de <b>Ytterby</b>.</li><li>Metal aislado por primera vez por Wöhler en 1828 (impuro).</li></ul></aside>
+</section>
+
+<section class="chap" id="atomicos" data-title="Datos atómicos">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Datos atómicos</h2>
+  <p class="lede">Con Z, A y la carga calculas todas las partículas del átomo. Cambia el isótopo o convierte el átomo en ion.</p></header>
+  <div class="card atom-wrap">
+    <div class="atom"><svg viewBox="-180 -180 360 360" role="img" aria-label="Modelo de capas del itrio: 2, 8, 18, 9 y 2 electrones"><g id="atomG"></g></svg></div>
+    <div>
+      <div class="lab">Átomo</div>
+      <div class="seg" role="group" aria-label="Carga"><button type="button" data-ion="0" aria-pressed="true">Neutro</button><button type="button" data-ion="1" aria-pressed="false">Ion Y³⁺</button></div>
+      <div class="lab">Isótopo</div>
+      <div class="seg" role="group" aria-label="Isótopo" id="isoSeg"></div>
+      <dl class="kv" style="margin-top:14px">
+        <dt>Número atómico (Z)</dt><dd>39</dd>
+        <dt>Número másico (A)</dt><dd id="aA">89</dd>
+        <dt>Protones</dt><dd id="aP">39</dd>
+        <dt>Neutrones (A − Z)</dt><dd id="aN">50</dd>
+        <dt>Electrones</dt><dd id="aE">39</dd>
+        <dt>Configuración</dt><dd class="mono" id="aC">[Kr] 4d¹ 5s²</dd>
+        <dt>Estado</dt><dd id="aS"></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="eqn" id="aEq" aria-live="polite">A = Z + N → 89 = 39 + 50</div>
+  <p>Protones = Z. Electrones = Z en el átomo neutro; en el ion Y³⁺ hay 3 menos. Neutrones = A − Z. Las capas del átomo neutro tienen 2, 8, 18, 9 y 2 electrones; en el ion la última capa queda vacía y es igual a la del kriptón.</p>
+  <aside class="recall"><span class="tag">Para recordar</span><ul><li><sup>89</sup>Y: <b>39 protones, 50 neutrones, 39 electrones</b>.</li><li>Y³⁺: 36 electrones, configuración [Kr].</li></ul></aside>
+</section>
+
+<section class="chap" id="configuracion" data-title="Configuración electrónica">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Configuración electrónica <span class="new">nuevo</span></h2>
+  <p class="lede">Llena los orbitales electrón por electrón, siguiendo la regla de las diagonales y la regla de Hund. Al llegar a 39 tienes el itrio.</p></header>
+  <div class="card">
+    <div class="cfg-el" id="cfgEl"></div>
+    <label class="lab" for="eRange" style="display:block">Electrones: <b id="eOut" style="color:var(--ink);font-size:1rem">39</b></label>
+    <input type="range" id="eRange" min="0" max="39" step="1" value="39">
+    <div class="row" style="margin-bottom:10px">
+      <button class="btn sm" type="button" id="eMinus">− 1 electrón</button>
+      <button class="btn sm" type="button" id="ePlus">+ 1 electrón</button>
+      <button class="btn sm primary" type="button" id="ePlay">▶ Llenar desde cero</button>
+    </div>
+    <div class="orb-grid" id="orbs" aria-hidden="true"></div>
+    <div class="lab">Configuración</div>
+    <div class="cfg-out" id="cfgFull" aria-live="polite"></div>
+    <div class="cfg-out muted" id="cfgShort"></div>
+    <div id="cfgNote"></div>
+  </div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><h3>Regla de las diagonales</h3><p class="muted small" style="margin-top:8px">Sigue las flechas de arriba abajo: es el orden en que se llenan los subniveles.</p><svg class="moeller" id="moeller" viewBox="0 0 260 250" role="img" aria-label="Diagrama de Moeller: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d"></svg></div>
+    <div class="card"><h3>¿Por qué 4d¹ 5s²?</h3><p style="margin-top:8px">El subnivel <b>5s</b> tiene menos energía que el <b>4d</b>, así que se llena antes. El electrón número 39 entra en el 4d. Al formar Y³⁺, el átomo pierde primero los dos electrones 5s y luego el 4d, y queda con la configuración del kriptón.</p><div class="eqn">Y: [Kr] 4d¹ 5s² → Y³⁺: [Kr]</div></div>
+  </div>
+  <aside class="recall"><span class="tag">Para recordar</span><ul><li>Orden: 1s 2s 2p 3s 3p 4s 3d 4p 5s 4d…</li><li>Itrio: <b>1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹</b>.</li><li>Abreviada: <b>[Kr] 4d¹ 5s²</b>.</li></ul></aside>
+</section>
+
+<section class="chap" id="propiedades" data-title="Propiedades">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Propiedades</h2>
+  <p class="lede">Un metal blando, plateado y bastante reactivo que se protege con una capa de óxido.</p></header>
+  <div class="grid2">
+    <div class="card"><h3>Físicas</h3>
+      <dl class="kv" style="margin-top:8px">
+        <dt>Estado a 20 °C</dt><dd>Sólido</dd><dt>Color</dt><dd>Blanco plateado, brillo metálico</dd>
+        <dt>Dureza</dt><dd>Blando</dd><dt>Densidad</dt><dd>4,47 g/cm³</dd>
+        <dt>Fusión</dt><dd>1526 °C (1799 K)</dd><dt>Ebullición</dt><dd>2930 °C (3203 K)</dd>
+        <dt>Estructura</dt><dd>Hexagonal compacta</dd><dt>Electronegatividad</dt><dd>1,22 (Pauling)</dd>
+      </dl></div>
+    <div class="card"><h3>Químicas</h3>
+      <ul style="padding-left:1.1em;margin:10px 0 0;font-size:.97rem">
+        <li>Estado de oxidación habitual: +3.</li>
+        <li>En aire forma una capa protectora de óxido: <span class="mono">4 Y + 3 O₂ → 2 Y₂O₃</span>.</li>
+        <li>Reacciona despacio con agua fría y más rápido con agua caliente: <span class="mono">2 Y + 6 H₂O → 2 Y(OH)₃ + 3 H₂</span>.</li>
+        <li>Virutas y polvo fino pueden arder en aire por encima de unos 400 °C.</li>
+        <li>Se disuelve en ácidos y reacciona con halógenos (YF₃, YCl₃).</li>
+        <li>Sus compuestos suelen ser incoloros o blancos, porque el Y³⁺ no tiene electrones d.</li>
+      </ul></div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>¿En qué estado está a cada temperatura?</h3>
+    <label for="tRange" class="lab" style="display:block">Temperatura: <b id="tOut" style="font-size:1rem;color:var(--ink)">20 °C</b></label>
+    <div class="thermo-wrap"><div class="thermo" aria-hidden="true"><i class="s" style="width:46.6%"></i><i class="l" style="width:37.9%"></i><i class="g" style="width:15.5%"></i></div><span class="pin" id="tPin"></span></div>
+    <div class="thermo-lab"><span style="width:46.6%">sólido</span><span style="width:37.9%">líquido (1526–2930 °C)</span><span>gas</span></div>
+    <input type="range" id="tRange" min="-200" max="3500" step="10" value="20">
+    <p id="tState" style="margin:0" aria-live="polite"></p>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Compara con otros metales</h3>
+    <div class="seg" role="group" aria-label="Propiedad" id="densSeg" style="margin-top:10px"><button type="button" data-p="d" aria-pressed="true">Densidad</button><button type="button" data-p="m" aria-pressed="false">Punto de fusión</button></div>
+    <div class="dens" id="dens"></div>
+    <p id="densNote" style="margin:12px 0 0;font-size:.92rem;color:var(--ink-2)"></p>
+  </div>
+  <div class="card flat" style="margin-top:10px">
+    <h3>El grupo 3, lado a lado <span class="new">nuevo</span></h3>
+    <div class="scroll" style="margin-top:8px"><table><thead><tr><th>Propiedad</th><th>Sc</th><th class="hl">Y</th><th>La</th><th>Lu</th></tr></thead><tbody>
+      <tr><td>Z</td><td>21</td><td class="hl">39</td><td>57</td><td>71</td></tr>
+      <tr><td>Masa (u)</td><td>44,956</td><td class="hl">88,906</td><td>138,91</td><td>174,97</td></tr>
+      <tr><td>Densidad (g/cm³)</td><td>2,99</td><td class="hl">4,47</td><td>6,15</td><td>9,84</td></tr>
+      <tr><td>Fusión (°C)</td><td>1541</td><td class="hl">1526</td><td>920</td><td>1652</td></tr>
+      <tr><td>Electronegatividad</td><td>1,36</td><td class="hl">1,22</td><td>1,10</td><td>1,27</td></tr>
+      <tr><td>Radio M³⁺ (pm)</td><td>74,5</td><td class="hl">90</td><td>103</td><td>86</td></tr>
+    </tbody></table></div>
+    <p class="small muted" style="margin-top:8px">El radio del Y³⁺ (90 pm) queda entre los de los lantánidos pesados: por eso se esconde entre ellos en los minerales.</p>
+  </div>
+  <aside class="recall"><span class="tag">Para recordar</span><ul><li>Sólido plateado, 4,47 g/cm³.</li><li>Fusión <b>1526 °C</b>, ebullición <b>2930 °C</b>.</li><li>Se oxida y forma Y₂O₃ protector.</li></ul></aside>
+</section>
+
+<section class="chap" id="enlaces" data-title="Enlaces químicos">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Enlaces químicos</h2>
+  <p class="lede">Según con qué se una, el itrio forma enlaces metálicos, iónicos o covalentes. Elige uno.</p></header>
+  <div class="card">
+    <div class="tabs" role="tablist" aria-label="Tipo de enlace">
+      <button class="btn" role="tab" type="button" id="tb-m" aria-controls="tp-m" aria-selected="true">Metálico</button>
+      <button class="btn" role="tab" type="button" id="tb-i" aria-controls="tp-i" aria-selected="false" tabindex="-1">Iónico</button>
+      <button class="btn" role="tab" type="button" id="tb-c" aria-controls="tp-c" aria-selected="false" tabindex="-1">Covalente</button>
+    </div>
+    <div class="tabpanel" role="tabpanel" id="tp-m" aria-labelledby="tb-m">
+      <div><h3>Y metálico</h3><p style="margin-top:8px">Cada átomo cede sus electrones de valencia (4d¹ 5s²) a una nube compartida. Los cationes quedan en una red hexagonal compacta y los electrones circulan entre ellos. Por eso el itrio brilla, conduce la electricidad y se deforma sin romperse.</p><p style="margin:0"><b>Ejemplos:</b> Y(s) y sus aleaciones con Al y Mg.</p></div>
+      <svg class="bond-svg" id="metalSvg" viewBox="0 0 300 170" role="img" aria-label="Cationes Y³⁺ en red con electrones libres"></svg>
+    </div>
+    <div class="tabpanel" role="tabpanel" id="tp-i" aria-labelledby="tb-i" hidden>
+      <div><h3>Enlace iónico</h3><p style="margin-top:8px">El itrio pierde tres electrones con facilidad y forma Y³⁺. Con no metales muy electronegativos (O, F, Cl) se arma una red de iones de carga opuesta. La carga total debe ser cero.</p><p style="margin:0"><b>Ejemplos:</b> Y₂O₃, YF₃, YCl₃. La diferencia de electronegatividad con el oxígeno es 3,44 − 1,22 = 2,22, un valor alto. Ningún enlace es 100 % iónico: en los óxidos hay algo de carácter covalente.</p></div>
+      <div><div class="ionchips"><span class="c p">Y³⁺</span><span class="c p">Y³⁺</span><span>+</span><span class="c n">O²⁻</span><span class="c n">O²⁻</span><span class="c n">O²⁻</span><span>→</span><span class="c r">Y₂O₃</span></div><div class="eqn">2 × (+3) + 3 × (−2) = +6 − 6 = 0</div></div>
+    </div>
+    <div class="tabpanel" role="tabpanel" id="tp-c" aria-labelledby="tb-c" hidden>
+      <div><h3>Enlace covalente</h3><p style="margin-top:8px">Aparece cuando los no metales comparten electrones. En el fosfato de la xenotima (YPO₄), los enlaces P–O dentro del ion PO₄³⁻ son covalentes y el Y³⁺ se une a ese ion de forma iónica. Existen además compuestos organometálicos de itrio con enlaces Y–C polares, que se estudian como catalizadores de polimerización.</p></div>
+      <svg class="bond-svg" viewBox="0 0 300 190" role="img" aria-label="Ion fosfato: un fósforo unido a cuatro oxígenos"><line class="bond-line" x1="150" y1="95" x2="150" y2="30"/><line class="bond-line" x1="150" y1="95" x2="80" y2="140"/><line class="bond-line" x1="150" y1="95" x2="220" y2="140"/><line class="bond-line" x1="150" y1="95" x2="150" y2="165"/><circle class="pb" cx="150" cy="95" r="22"/><text x="150" y="99">P</text><circle class="ob" cx="150" cy="30" r="16"/><text x="150" y="34">O</text><circle class="ob" cx="80" cy="140" r="16"/><text x="80" y="144">O</text><circle class="ob" cx="220" cy="140" r="16"/><text x="220" y="144">O</text><circle class="ob" cx="150" cy="165" r="16"/><text x="150" y="169">O</text></svg>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Arma la fórmula con cargas <span class="new">nuevo</span></h3>
+    <p class="muted small" style="margin-top:6px">Elige el anión. El itrio aporta +3; la fórmula sale del mínimo común múltiplo de las cargas.</p>
+    <div class="chips" id="ionPick"></div>
+    <div class="ionchips" id="ionBuild" style="margin-top:10px"></div>
+    <div class="eqn" id="ionEq"></div>
+  </div>
+  <div class="card flat" style="margin-top:10px">
+    <h3>Regla rápida</h3>
+    <div class="scroll"><table><thead><tr><th>Átomos que se unen</th><th>Enlace</th><th>Ejemplo con itrio</th></tr></thead><tbody>
+      <tr><td>Metal + metal</td><td>Metálico</td><td>Y, aleaciones Al–Y</td></tr>
+      <tr><td>Metal + no metal</td><td>Iónico</td><td>Y₂O₃, YF₃</td></tr>
+      <tr><td>No metal + no metal</td><td>Covalente</td><td>P–O en el PO₄³⁻ de YPO₄</td></tr></tbody></table></div>
+  </div>
+</section>
+
+<section class="chap" id="calculadora" data-title="Laboratorio de cálculo">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Laboratorio de cálculo <span class="new">nuevo</span></h2>
+  <p class="lede">Escribe cualquier fórmula y obtén su masa molar, los moles, el número de partículas y cuánto itrio contiene. Te muestra el cálculo paso a paso.</p></header>
+  <div class="card">
+    <div class="calc-in">
+      <div class="field"><label for="fIn">Fórmula</label><input id="fIn" value="Y2O3" autocomplete="off" spellcheck="false" aria-describedby="fErr"></div>
+      <div class="field"><label for="gIn">Masa de muestra (g)</label><input id="gIn" type="number" min="0" step="any" value="10" inputmode="decimal"></div>
+    </div>
+    <div class="chips" id="fChips" aria-label="Compuestos de ejemplo"></div>
+    <p class="calc-err" id="fErr" aria-live="polite"></p>
+    <div class="results" id="cRes"></div>
+    <div class="lab">Composición en masa</div>
+    <div class="stack" id="cStack" aria-hidden="true"></div>
+    <div class="scroll"><table><thead><tr><th>Elemento</th><th>Átomos</th><th>Masa atómica</th><th>Aporte (g/mol)</th><th>% en masa</th></tr></thead><tbody id="cTbl"></tbody></table></div>
+    <div class="lab">Paso a paso</div>
+    <div class="steps-calc" id="cSteps"></div>
+  </div>
+  <aside class="recall"><span class="tag">Para recordar</span><ul><li>Masa molar = suma de (átomos × masa atómica).</li><li>n = m / M · partículas = n × 6,022 × 10²³.</li><li>Y₂O₃: <b>225,81 g/mol</b>, ≈ 78,7 % de itrio.</li></ul></aside>
+</section>
+
+<section class="chap" id="aplicaciones" data-title="Aplicaciones">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Aplicaciones</h2>
+  <p class="lede">Casi nunca verás itrio metálico: aparece como óxido o dentro de cristales. Mira dónde cae cada luz en el espectro y filtra las aplicaciones por área.</p></header>
+  <div class="card">
+    <h3>El espectro del itrio <span class="new">nuevo</span></h3>
+    <p class="muted small" style="margin-top:6px">Toca cada marca. La escala es logarítmica para que quepan el visible y el infrarrojo.</p>
+    <svg class="spec" id="spec" viewBox="0 0 640 170" role="group" aria-label="Espectro electromagnético con las longitudes de onda de los materiales de itrio"></svg>
+    <div class="spec-info" id="specInfo" aria-live="polite"></div>
+  </div>
+  <div class="row" role="group" aria-label="Filtrar aplicaciones" id="appFilter" style="margin-top:22px">
+    <button class="btn sm" type="button" data-f="all" aria-pressed="true">Todas</button>
+    <button class="btn sm" type="button" data-f="pantallas" aria-pressed="false">Pantallas e iluminación</button>
+    <button class="btn sm" type="button" data-f="laseres" aria-pressed="false">Láseres</button>
+    <button class="btn sm" type="button" data-f="industria" aria-pressed="false">Cerámicas e industria</button>
+    <button class="btn sm" type="button" data-f="medicina" aria-pressed="false">Medicina</button>
+  </div>
+  <div class="apps" id="apps"></div>
+</section>
+
+<section class="chap" id="extraccion" data-title="Extracción industrial">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Extracción industrial</h2>
+  <p class="lede">Del mineral al metal hay seis etapas. La más difícil es separar el itrio de sus vecinos.</p></header>
+  <h3 style="margin-bottom:12px">Minerales de origen</h3>
+  <div class="minerals">
+    <div class="mineral"><b>Xenotima</b><span class="fm">YPO₄</span><p>Fosfato de itrio. Fuente principal de itrio y tierras raras pesadas.</p></div>
+    <div class="mineral"><b>Monacita</b><span class="fm">(Ce,La,Nd,Th)PO₄</span><p>Rica en tierras raras ligeras; trae algo de itrio y suele llevar torio radiactivo.</p></div>
+    <div class="mineral"><b>Gadolinita</b><span class="fm">Y₂FeBe₂Si₂O₁₀</span><p>El silicato donde se descubrió el itrio.</p></div>
+    <div class="mineral"><b>Arcillas iónicas</b><span class="fm">Y³⁺ adsorbido</span><p>Iones de tierras raras pegados a arcillas, sobre todo en el sur de China. Se lavan con soluciones salinas.</p></div>
+  </div>
+  <div class="card stepper">
+    <div class="steps" id="steps" role="group" aria-label="Etapas"></div>
+    <div class="step-body" id="stepBody" aria-live="polite"></div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>¿Por qué hacen falta tantas etapas? <span class="new">nuevo</span></h3>
+    <p class="muted small" style="margin-top:6px">Supón que cada etapa de extracción por solventes sube un poco la pureza. Mueve el control y mira cuántas etapas necesitas para llegar a 99,99 %.</p>
+    <label class="lab" for="sxRange" style="display:block">Etapas: <b id="sxOut" style="color:var(--ink);font-size:1rem">10</b></label>
+    <input type="range" id="sxRange" min="0" max="120" step="1" value="10">
+    <div class="purity"><b id="sxPct">—</b> de itrio en la mezcla</div>
+    <div class="bar" style="height:12px"><i id="sxBar" style="background:var(--yag)"></i></div>
+    <p class="small muted" style="margin:10px 0 0" id="sxNote"></p>
+  </div>
+  <aside class="recall"><span class="tag">Para recordar</span><ul><li>Minerales: <b>xenotima</b>, monacita, gadolinita, arcillas iónicas.</li><li>Separación: <b>extracción por solventes</b> o intercambio iónico.</li><li>Metal: <span class="mono">2 YF₃ + 3 Ca → 2 Y + 3 CaF₂</span>.</li></ul></aside>
+</section>
+
+<section class="chap" id="duracion" data-title="Tiempo de duración">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Tiempo de duración</h2>
+  <p class="lede">Son dos preguntas distintas: cuánto dura el itrio natural y cuánto duran sus isótopos radiactivos.</p></header>
+  <div class="grid2">
+    <div class="card"><span class="badge ok">Estable</span><h3 style="margin-top:10px">Itrio natural</h3><p style="margin-top:8px;margin-bottom:0">Es 100 % <sup>89</sup>Y, un isótopo estable. No se desintegra, así que su duración es ilimitada.</p></div>
+    <div class="card"><span class="badge warn">Radiactivo</span><h3 style="margin-top:10px">Itrio artificial</h3><p style="margin-top:8px;margin-bottom:0">Los demás isótopos se desintegran. El <sup>90</sup>Y, el de uso médico, se obtiene del <sup>90</sup>Sr o activando <sup>89</sup>Y con neutrones.</p></div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Simulador de semivida</h3>
+    <div class="lab">Isótopo</div><div class="seg" id="decSeg" role="group" aria-label="Isótopo radiactivo"></div>
+    <label class="lab" for="nRange" style="display:block">Semividas transcurridas: <b id="nOut" style="color:var(--ink);font-size:1rem">1</b></label>
+    <input type="range" id="nRange" min="0" max="6" step="0.25" value="1">
+    <div class="row"><button class="btn sm" type="button" id="decPlay">▶ Ver desintegración al azar</button></div>
+    <div class="atom-wrap" style="margin-top:8px">
+      <svg class="chart" id="decChart" viewBox="0 0 420 240" role="img" aria-label="Curva de decaimiento exponencial"></svg>
+      <div>
+        <div class="big" id="pctOut">50 %</div><p id="timeOut" style="margin:4px 0 12px;color:var(--ink-2)"></p>
+        <div class="dots" id="dots" aria-hidden="true"></div>
+        <p style="font-size:.9rem;color:var(--ink-2);margin:10px 0 0">Cada punto es 1 de cada 100 átomos iniciales; los rojos siguen sin desintegrarse. Con «al azar» verás que cada átomo decide solo, pero el conjunto sigue la curva.</p>
+      </div>
+    </div>
+    <div class="eqn">N = N₀ · (½)<sup>t / t½</sup></div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Calculadora de dosis restante <span class="new">nuevo</span></h3>
+    <p class="muted small" style="margin-top:6px">Un hospital recibe una muestra de ⁹⁰Y. ¿Cuánta actividad queda después de un tiempo?</p>
+    <div class="calc-in" style="margin-top:10px">
+      <div class="field"><label for="a0In">Actividad inicial (%)</label><input id="a0In" type="number" value="100" min="0" step="any"></div>
+      <div class="field"><label for="hIn">Horas transcurridas</label><input id="hIn" type="number" value="24" min="0" step="any"></div>
+    </div>
+    <div class="eqn" id="doseOut" aria-live="polite"></div>
+  </div>
+  <div class="card flat" style="margin-top:10px"><div class="scroll"><table><thead><tr><th>Isótopo</th><th>Semivida</th><th>Desintegración</th><th>Producto</th></tr></thead><tbody id="isoTbl"></tbody></table></div></div>
+</section>
+
+<section class="chap" id="curiosos" data-title="Datos curiosos">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Datos curiosos</h2>
+  <p class="lede">Toca una tarjeta para girarla.</p></header>
+  <div class="flips" id="flips"></div>
+</section>
+
+<section class="chap" id="juego" data-title="Juego de parejas">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Juego de parejas <span class="new">nuevo</span></h2>
+  <p class="lede">Une cada material de itrio con su uso. Gira dos cartas por turno; si coinciden, se quedan boca arriba.</p></header>
+  <div class="card">
+    <div class="game-top"><div class="game-stats"><span>Movimientos <b id="gMoves">0</b></span><span>Tiempo <b id="gTime">0:00</b></span><span>Récord <b id="gBest">—</b></span></div><button class="btn sm" type="button" id="gNew">Barajar de nuevo</button></div>
+    <div class="memo" id="memo"></div>
+  </div>
+</section>
+
+<section class="chap" id="fichas" data-title="Fichas de estudio">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Fichas de estudio <span class="new">nuevo</span></h2>
+  <p class="lede">Repetición espaciada: lo que no sabes vuelve pronto; lo que dominas pasa a la caja 3. Tu avance se guarda en este navegador.</p></header>
+  <div class="card">
+    <div class="leitner" id="leit"></div>
+    <button class="fcard" type="button" id="fcard" aria-pressed="false"><span class="face f" id="fcF"></span><span class="face b" id="fcB"></span></button>
+    <div class="fc-act" id="fcAct">
+      <button class="btn no" type="button" id="fcNo">✗ No lo sabía <kbd class="mono small">1</kbd></button>
+      <button class="btn yes" type="button" id="fcYes">✓ Lo sabía <kbd class="mono small">2</kbd></button>
+    </div>
+    <p class="small muted" style="text-align:center;margin:12px auto 0">Toca la ficha o pulsa espacio para girarla. <button class="btn sm" type="button" id="fcReset" style="margin-left:6px">Reiniciar cajas</button></p>
+  </div>
+</section>
+
+<section class="chap" id="glosario" data-title="Glosario">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Glosario <span class="new">nuevo</span></h2>
+  <p class="lede">Todas las palabras técnicas de la guía, explicadas en una línea.</p></header>
+  <div class="card">
+    <div class="field"><label for="glIn">Buscar término</label><input id="glIn" type="search" placeholder="Ej.: semivida, ion, dopante…" autocomplete="off"></div>
+    <div class="gl-letters" id="glLetters"></div>
+    <dl class="gl-list" id="glList"></dl>
+  </div>
+</section>
+
+<section class="chap" id="conclusion" data-title="Conclusión">
+  <header class="chap-head"><p class="eyebrow" data-num></p><h2>Conclusión</h2></header>
+  <p>El itrio es un metal poco conocido que sostiene tecnología cotidiana: la luz blanca de los LED, los láseres de corte y de cirugía, las cerámicas que resisten el calor de una turbina y los superconductores. En medicina, su isótopo <sup>90</sup>Y trata tumores desde dentro.</p>
+  <p>Su importancia también es estratégica. Es difícil de separar de otras tierras raras y la producción está concentrada en pocos países, por lo que reciclarlo y encontrar fuentes nuevas es un tema activo en ciencia e industria.</p>
+  <div class="card flat"><h3>Hoja de repaso</h3><div class="scroll" style="margin-top:8px"><table><tbody>
+    <tr><th>Símbolo · Z</th><td>Y · 39</td></tr>
+    <tr><th>Ubicación</th><td>Grupo 3 · período 5 · bloque d · tierra rara</td></tr>
+    <tr><th>Descubridor</th><td>Johan Gadolin, 1794 (Ytterby, Suecia)</td></tr>
+    <tr><th>Partículas de ⁸⁹Y</th><td>39 p⁺ · 50 n⁰ · 39 e⁻</td></tr>
+    <tr><th>Configuración</th><td>[Kr] 4d¹ 5s² → Y³⁺ = [Kr]</td></tr>
+    <tr><th>Fusión · ebullición</th><td>1526 °C · 2930 °C</td></tr>
+    <tr><th>Densidad</th><td>4,47 g/cm³</td></tr>
+    <tr><th>Enlaces</th><td>Metálico (Y), iónico (Y₂O₃), covalente (P–O en YPO₄)</td></tr>
+    <tr><th>Masa molar Y₂O₃</th><td>225,81 g/mol (78,7 % Y)</td></tr>
+    <tr><th>Usos</th><td>LED (YAG:Ce), láser Nd:YAG, YSZ, YBCO, ⁹⁰Y</td></tr>
+    <tr><th>Extracción</th><td>Xenotima → solventes → Y₂O₃ → YF₃ → Y con Ca</td></tr>
+    <tr><th>Duración</th><td>⁸⁹Y estable · ⁹⁰Y t½ = 64,1 h</td></tr></tbody></table></div></div>
+  <div class="row no-print" style="margin-top:16px"><button class="btn primary" type="button" data-act="print"><svg><use href="#i-print"/></svg>Imprimir o guardar en PDF</button><button class="btn" type="button" data-act="share"><svg><use href="#i-share"/></svg>Compartir la guía</button></div>
+</section>
+
+<section class="chap" id="quiz" data-title="Quiz de repaso">
+  <header class="chap-head"><p class="eyebrow">Repaso</p><h2>Quiz de repaso</h2><p class="lede">30 preguntas con explicación. Elige un modo; responde con el ratón o con las teclas 1–4.</p></header>
+  <div class="card" id="quizBox" aria-live="polite"></div>
+</section>
+
+<section class="chap" id="logros" data-title="Logros">
+  <header class="chap-head"><p class="eyebrow">Tu progreso</p><h2>Logros</h2><p class="lede">Se guardan en este navegador. ¿Puedes desbloquear los diez?</p></header>
+  <div class="ach" id="ach"></div>
+  <div class="row" style="margin-top:14px"><button class="btn sm" type="button" id="resetAll">Borrar mi progreso</button></div>
+</section>
+
+<footer class="foot">
+  <p>Cifras redondeadas; si tu profesor usa otros valores, compáralos con tu libro. Para ampliar: <a href="https://www.rsc.org/periodic-table/element/39/yttrium" target="_blank" rel="noopener">Royal Society of Chemistry</a> · <a href="https://www.britannica.com/science/yttrium" target="_blank" rel="noopener">Britannica</a> · <a href="https://pubchem.ncbi.nlm.nih.gov/element/Yttrium" target="_blank" rel="noopener">PubChem</a>.</p>
+  <p>Funciona sin conexión después de la primera visita. Atajos: <span class="mono">⌘K</span> o <span class="mono">/</span> buscar · <span class="mono">1–4</span> responder en el quiz · <span class="mono">espacio</span> girar ficha.</p>
+</footer>
+</main>
+</div>
+
+<div class="comp" id="comp">
+  <div class="comp-bubble" id="compBubble" hidden></div>
+  <button class="comp-btn" type="button" id="compBtn" aria-label="Itri, tu guía. Toca para oír un dato"><span id="compMascot"></span></button>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<dialog class="search" id="searchDlg" aria-label="Buscar en la guía">
+  <div class="search-in"><svg width="18" height="18"><use href="#i-search"/></svg><input id="sIn" placeholder="Busca un tema, término o dato…" autocomplete="off" aria-controls="sRes"><kbd class="mono small muted">Esc</kbd></div>
+  <ul class="search-res" id="sRes" role="listbox"></ul>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
