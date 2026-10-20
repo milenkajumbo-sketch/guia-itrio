@@ -488,11 +488,23 @@ dialog.search::backdrop{background:rgba(10,15,32,.45);backdrop-filter:blur(3px)}
 .foot{margin-top:80px;padding-top:20px;border-top:1px solid var(--line);font-size:.9rem;color:var(--ink-2)}
 .foot p{max-width:none}
 
+/* Bibliografía */
+.refs{margin:0;padding-left:2.2em;display:grid;gap:12px}
+.refs li{padding-left:6px;scroll-margin-top:90px;border-radius:8px;transition:background .6s}
+.refs li::marker{font:600 .85rem var(--f-mono);color:var(--accent)}
+.refs li.flash{background:var(--yag-soft)}
+.refs .ref-t{display:block;text-indent:-1.4em;padding-left:1.4em}
+.refs a{word-break:break-all}
+.refs .ref-u{display:block;font-size:.82rem;color:var(--ink-2);margin-top:2px}
+.src{font-size:.85rem;color:var(--ink-2);margin:12px 0 0}
+.src a{font:600 .78rem var(--f-mono);text-decoration:none;background:var(--accent-soft);color:var(--ink);border-radius:6px;padding:1px 6px;margin-right:3px}
+.src a:hover{background:var(--accent);color:var(--accent-ink)}
+
 /* Impresión: la guía queda como apuntes */
 @media print{
   :root{--bg:#fff;--surface:#fff;--surface-2:#f1f1f1;--ink:#000;--ink-2:#333;--line:#ccc}
   body{font-size:11pt;padding:0}
-  .side,.topbar,.comp,.drawer,.chap-tools,.stage,.hero .row,.toast,dialog,#juego,#fichas,#quiz,#logros,.step-nav,.seg,.tabs,input[type=range],.no-print{display:none!important}
+  .side,.topbar,.comp,.drawer,.chap-tools,.stage,.hero .row,.toast,dialog,#juego,#fichas,#quiz,#logros,.src,.step-nav,.seg,.tabs,input[type=range],.no-print{display:none!important}
   .layout{display:block}
   .main{max-width:none;padding:0}
   .chap{margin-top:28px;break-inside:avoid-page}

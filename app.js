@@ -123,7 +123,7 @@ const canSpeak='speechSynthesis' in window;let speakingBtn=null;
 function stopSpeak(){if(!canSpeak)return;speechSynthesis.cancel();if(speakingBtn){speakingBtn.innerHTML='<svg><use href="#i-sound"/></svg>Escuchar';speakingBtn.setAttribute('aria-pressed','false')}speakingBtn=null}
 function speakSection(sec,btn){
  if(speakingBtn===btn){stopSpeak();return}stopSpeak();
- const parts=[];$$('h2,p,li,dt,dd,h3,.tl-body,.face.b',sec).forEach(el=>{if(el.closest('.chap-tools,button:not(.flip),.eyebrow,svg,.q-top')||el.offsetParent===null&&!el.closest('.flip'))return;const t=el.textContent.trim();if(t)parts.push(t)});
+ const parts=[];$$('h2,p,li,dt,dd,h3,.tl-body,.face.b',sec).forEach(el=>{if(el.closest('.chap-tools,.src,button:not(.flip),.eyebrow,svg,.q-top')||el.offsetParent===null&&!el.closest('.flip'))return;const t=el.textContent.trim();if(t)parts.push(t)});
  const text=parts.join('. ').replace(/\s+/g,' ').replace(/\.\./g,'.');
  const chunks=text.match(/[^.!?]+[.!?]*/g)||[text];
  const voice=speechSynthesis.getVoices().find(v=>/^es/i.test(v.lang));
@@ -133,6 +133,16 @@ NUMBERED.forEach(s=>{const h=$('.chap-head',s);const box=document.createElement(
  if(canSpeak)box.innerHTML='<button class="btn sm" type="button" aria-pressed="false"><svg><use href="#i-sound"/></svg>Escuchar</button>';
  h.appendChild(box);const b=$('button',box);if(b)b.addEventListener('click',()=>speakSection(s,b))});
 if(canSpeak)speechSynthesis.getVoices();
+
+/* ---------- Bibliografía ---------- */
+const refTxt=r=>r[0].replace(/<[^>]+>/g,'')+(r[1]?' '+r[1]:'');
+$('#refs').innerHTML=REFS.map((r,i)=>`<li id="ref-${i+1}"><span class="ref-t">${r[0]}${r[1]?` <a href="${r[1]}" target="_blank" rel="noopener">${r[1]}</a>`:''}</span><span class="ref-u">Se usó para: ${r[2]}.</span></li>`).join('');
+Object.entries(CHREFS).forEach(([id,ns])=>{const h=$('#'+id+' .chap-head');if(!h)return;const p=document.createElement('p');p.className='src';
+ p.innerHTML='Fuentes: '+ns.map(n=>`<a href="#ref-${n}" title="${refTxt(REFS[n-1]).slice(0,140)}">[${n}]</a>`).join('');h.appendChild(p)});
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#ref-"]');if(!a)return;const li=$(a.getAttribute('href'));if(!li)return;
+ setTimeout(()=>{li.classList.add('flash');setTimeout(()=>li.classList.remove('flash'),1600)},400)});
+$('#refCopy').addEventListener('click',async()=>{const t=REFS.map(refTxt).join('\n\n');
+ try{await navigator.clipboard.writeText(t);toast('Bibliografía copiada. Pégala en tu trabajo.')}catch(e){toast('No pude copiar; selecciona el texto a mano')}});
 
 /* ---------- Línea de tiempo ---------- */
 $('#timeline').innerHTML=TL.map((t,i)=>`<li><button class="tl-btn" type="button" aria-expanded="${i===1}" aria-controls="tl${i}"><span class="yr">${t[0]}</span><span class="tt">${t[1]}</span><svg class="chev" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg></button><div class="tl-body" id="tl${i}" ${i===1?'':'hidden'}>${t[2]}</div></li>`).join('');

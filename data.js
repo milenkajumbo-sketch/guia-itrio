@@ -208,3 +208,38 @@ const ACH=[
  ['cards','🗂️','Constancia','Lleva 10 fichas a la caja 3.'],
  ['quiz','🏆','Matrícula de honor','Saca 10/10 en el quiz rápido.'],
  ['fast','⚡','Rayo','Acierta 8 o más en contrarreloj.']];
+
+/* Bibliografía (APA 7). Las referencias con DOI se verificaron en Crossref. */
+const REFS=[
+ ['Prohaska, T., Irrgeher, J., Benefield, J., Böhlke, J. K., Chesson, L. A., Coplen, T. B., Ding, T., Dunn, P. J. H., Gröning, M., Holden, N. E., et al. (2022). Standard atomic weights of the elements 2021 (IUPAC Technical Report). <i>Pure and Applied Chemistry, 94</i>(5), 573–600.','https://doi.org/10.1515/pac-2019-0603','Masa atómica oficial (88,905 84 u)'],
+ ['Commission on Isotopic Abundances and Atomic Weights [CIAAW]. (s. f.). <i>Yttrium</i>.','https://www.ciaaw.org/yttrium.htm','Masa atómica e isótopo natural ⁸⁹Y'],
+ ['Haynes, W. M. (Ed.). (2016). <i>CRC Handbook of Chemistry and Physics</i> (97.ª ed.). CRC Press.','','Densidad, fusión, ebullición, electronegatividad, abundancia en la corteza'],
+ ['Greenwood, N. N., y Earnshaw, A. (1997). <i>Chemistry of the Elements</i> (2.ª ed.). Butterworth-Heinemann.','','Química del grupo 3, enlaces y compuestos'],
+ ['Royal Society of Chemistry. (s. f.). <i>Yttrium</i>. Periodic Table.','https://www.rsc.org/periodic-table/element/39/yttrium','Ficha general, historia, usos y datos curiosos'],
+ ['National Center for Biotechnology Information. (s. f.). <i>PubChem Element Summary for AtomicNumber 39, Yttrium</i>.','https://pubchem.ncbi.nlm.nih.gov/element/Yttrium','Propiedades atómicas y físicas'],
+ ['Encyclopaedia Britannica. (s. f.). <i>Yttrium</i>.','https://www.britannica.com/science/yttrium','Historia, propiedades y usos'],
+ ['Emsley, J. (2011). <i>Nature’s Building Blocks: An A–Z Guide to the Elements</i> (2.ª ed.). Oxford University Press.','','Historia, abundancia y datos curiosos'],
+ ['Weeks, M. E. (1932). The discovery of the elements. XVI. The rare earth elements. <i>Journal of Chemical Education, 9</i>(10), 1751.','https://doi.org/10.1021/ed009p1751','Historia: Arrhenius, Gadolin, Ekeberg, Mosander'],
+ ['Connelly, N. G., Damhus, T., Hartshorn, R. M., y Hutton, A. T. (Eds.). (2005). <i>Nomenclature of Inorganic Chemistry: IUPAC Recommendations 2005</i>. RSC Publishing.','','Definición de tierras raras y lantánidos'],
+ ['Shannon, R. D. (1976). Revised effective ionic radii and systematic studies of interatomic distances in halides and chalcogenides. <i>Acta Crystallographica Section A, 32</i>(5), 751–767.','https://doi.org/10.1107/S0567739476001551','Radios iónicos de Y³⁺, Ho³⁺, Sc³⁺, La³⁺ y Lu³⁺'],
+ ['Chang, R., y Goldsby, K. A. (2017). <i>Química</i> (12.ª ed.). McGraw-Hill.','','Configuración electrónica, enlaces, mol y masa molar'],
+ ['Blasse, G., y Grabmaier, B. C. (1994). <i>Luminescent Materials</i>. Springer.','https://doi.org/10.1007/978-3-642-79017-1','Fósforos Y₂O₃:Eu³⁺ y YAG:Ce'],
+ ['Bando, K., Sakano, K., Noguchi, Y., y Shimizu, Y. (1998). Development of high-bright and pure-white LED lamps. <i>Journal of Light & Visual Environment, 22</i>(1), 2–5.','https://doi.org/10.2150/jlve.22.1_2','LED blanco: LED azul + YAG:Ce'],
+ ['Geusic, J. E., Marcos, H. M., y Van Uitert, L. G. (1964). Laser oscillations in Nd-doped yttrium aluminum, yttrium gallium and gadolinium garnets. <i>Applied Physics Letters, 4</i>(10), 182–184.','https://doi.org/10.1063/1.1753928','Primer láser Nd:YAG (1964, 1064 nm)'],
+ ['Wu, M. K., Ashburn, J. R., Torng, C. J., Hor, P. H., Meng, R. L., Gao, L., Huang, Z. J., Wang, Y. Q., y Chu, C. W. (1987). Superconductivity at 93 K in a new mixed-phase Y-Ba-Cu-O compound system at ambient pressure. <i>Physical Review Letters, 58</i>(9), 908–910.','https://doi.org/10.1103/PhysRevLett.58.908','Superconductor YBCO a 93 K'],
+ ['Piconi, C., y Maccauro, G. (1999). Zirconia as a ceramic biomaterial. <i>Biomaterials, 20</i>(1), 1–25.','https://doi.org/10.1016/S0142-9612(98)00010-6','Zirconia estabilizada con itria (YSZ)'],
+ ['Coluzzi, D. J. (2004). Fundamentals of dental lasers: Science and instruments. <i>Dental Clinics of North America, 48</i>(4), 751–770.','https://doi.org/10.1016/j.cden.2004.05.003','Láseres Er:YAG y Nd:YAG en odontología'],
+ ['Salem, R., y Thurston, K. G. (2006). Radioembolization with 90Yttrium microspheres: A state-of-the-art brachytherapy treatment for primary and secondary liver malignancies. <i>Journal of Vascular and Interventional Radiology, 17</i>(8), 1251–1278.','https://doi.org/10.1097/01.RVI.0000233785.75257.9A','Radioembolización con ⁹⁰Y y alcance de su radiación beta'],
+ ['Witzig, T. E., Gordon, L. I., Cabanillas, F., Czuczman, M. S., et al. (2002). Randomized controlled trial of yttrium-90–labeled ibritumomab tiuxetan radioimmunotherapy versus rituximab immunotherapy for patients with relapsed or refractory low-grade, follicular, or transformed B-cell non-Hodgkin’s lymphoma. <i>Journal of Clinical Oncology, 20</i>(10), 2453–2463.','https://doi.org/10.1200/JCO.2002.11.076','Anticuerpos marcados con ⁹⁰Y'],
+ ['Gupta, C. K., y Krishnamurthy, N. (2005). <i>Extractive Metallurgy of Rare Earths</i>. CRC Press.','','Minerales, apertura química, extracción por solventes y reducción con calcio'],
+ ['Binnemans, K., Jones, P. T., Blanpain, B., Van Gerven, T., Yang, Y., Walton, A., y Buchert, M. (2013). Recycling of rare earths: A critical review. <i>Journal of Cleaner Production, 51</i>, 1–22.','https://doi.org/10.1016/j.jclepro.2012.12.037','Reciclaje e importancia estratégica'],
+ ['U.S. Geological Survey. (2025). <i>Mineral Commodity Summaries 2025: Rare earths</i>.','https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-rare-earths.pdf','Producción mundial de tierras raras'],
+ ['National Nuclear Data Center. (s. f.). <i>NuDat 3</i>. Brookhaven National Laboratory.','https://www.nndc.bnl.gov/nudat3/','Semividas y tipos de desintegración de ⁸⁷Y a ⁹¹Y'],
+ ['Gadolin, J. (1794). Undersökning af en svart tung stenart ifrån Ytterby stenbrott i Roslagen. <i>Kongl. Vetenskaps Academiens Nya Handlingar, 15</i>, 137–155.','','Artículo original del descubrimiento']];
+
+/* Fuentes de cada capítulo (números de REFS, empezando en 1) */
+const CHREFS={
+ 'que-es':[1,2,5,6,10,3],tabla:[10,11,4],historia:[9,25,5,7,15,16,14],atomicos:[1,2,24,6],
+ configuracion:[12,4],propiedades:[3,6,4,11],enlaces:[4,12,3],calculadora:[1,12],
+ aplicaciones:[13,14,15,16,17,18,19,20],extraccion:[21,4,23],duracion:[24,19],
+ curiosos:[5,8,3,16,11,19],juego:[13,15,16,17,19],fichas:[12,4,5],glosario:[12,10,4],conclusion:[22,23,5]};
